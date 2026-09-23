@@ -1,0 +1,5 @@
+trip_id,trip_date,distance_km,fare_amount,payment_type
+1,2026-01-01,5.2,25.00,credit_card
+2,2026-01-01,2.1,12.00,cash
+3,2026-01-02,8.7,40.00,credit_card
+4,2026-01-02,-1.0,15.00,cash
