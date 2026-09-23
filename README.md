@@ -123,6 +123,12 @@ Essa camada contém somente registros válidos e preparados para análise.
 
 O formato Parquet foi utilizado por ser colunar e adequado para workloads analíticos, permitindo leituras mais eficientes de dados.
 
+### Estrutura do Data Lake no Amazon S3
+
+A estrutura abaixo mostra as camadas do Data Lake armazenadas no Amazon S3:
+
+![Camadas do Data Lake no Amazon S3](docs/s3-layers.png)
+
 ### 4. AWS Glue Data Catalog
 
 Uma tabela externa chamada `trips` é registrada no catálogo apontando para os arquivos Parquet da camada Silver.
@@ -159,6 +165,12 @@ As consultas utilizadas no projeto estão disponíveis em:
 ```text
 sql/athena_queries.sql
 ```
+
+### Resultado no Amazon Athena
+
+A consulta abaixo demonstra a leitura dos dados da camada Silver diretamente pelo Amazon Athena:
+
+![Resultado da consulta no Amazon Athena](docs/athena-results.png)
 
 ## Como executar o projeto
 
