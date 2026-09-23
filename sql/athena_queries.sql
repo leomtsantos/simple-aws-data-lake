@@ -6,7 +6,7 @@ CREATE EXTERNAL TABLE IF NOT EXISTS trips (
     payment_type STRING
 )
 STORED AS PARQUET
-LOCATION 's3://simple-data-lake-b68fd3cb/silver/trips/';
+LOCATION 's3://YOUR_BUCKET_NAME/silver/trips/';
 
 SELECT COUNT(*) AS total_trips
 FROM trips;
