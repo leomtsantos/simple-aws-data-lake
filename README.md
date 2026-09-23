@@ -40,7 +40,9 @@ simple-aws-data-lake/
 ├── data/
 │   └── trips.csv
 ├── docs/
-│   └── architecture.png
+│   ├── architecture.png
+│   ├── athena-results.png
+│   └── s3-layers.png
 ├── src/
 │   └── transform.py
 ├── sql/
